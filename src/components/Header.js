@@ -5,7 +5,7 @@ function Header() {
     return (
         <>
             <header>
-                <div className="logo"><a href="#">Logo</a></div>
+                <div className="logo"><a href="www.google.com">Logo</a></div>
                 <input type="checkbox" id="nav-toggle" className="nav-toggle" />
                 <label htmlFor="nav-toggle" className='nav-toggle-label'>
                     <span></span>
@@ -13,16 +13,16 @@ function Header() {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">About</a>
+                            <a href="www.google.com">About</a>
                         </li>
                         <li>
-                            <a href="#">Tutorials</a>
+                            <a href="www.google.com">Tutorials</a>
                         </li>
                         <li>
-                            <a href="#">Projects</a>
+                            <a href="www.google.com">Projects</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="www.google.com">Contact</a>
                         </li>
                     </ul>
                 </nav>

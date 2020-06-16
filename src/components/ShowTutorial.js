@@ -5,8 +5,9 @@ import '../styles/ShowTutorial.css'
 function ShowTutorial(props) {
     pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
     const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
-
+    // const [pageNumber, setPageNumber] = useState(1);
+    const pageNumber = 1;
+    
     function onDocumentLoadSuccess({ numPages }) {
         setNumPages(numPages);
     }
