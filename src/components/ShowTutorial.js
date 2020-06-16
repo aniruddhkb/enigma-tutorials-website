@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
-import { Document, Page } from "react-pdf/dist/entry.webpack"
-
+import { Document, Page, pdfjs } from "react-pdf";
 import '../styles/ShowTutorial.css'
 
 function ShowTutorial(props) {
+    pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
 
