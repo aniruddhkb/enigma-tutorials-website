@@ -1,0 +1,14 @@
+.tutorial-pdf{
+    width: 80vw;
+    margin: auto;
+}
+
+.react-pdf_Page{
+    width: 80%;
+    margin: auto;
+}
+
+.react-pdf_Page > canvas{
+    width: 100%;
+    margin: auto
+}
