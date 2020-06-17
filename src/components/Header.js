@@ -1,28 +1,29 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "../styles/Header.css";
 
 function Header() {
     return (
         <>
             <header>
-                <div className="logo"><a href="www.google.com">Logo</a></div>
+                <div className="logo"><Link to="/">Logo</Link></div>
                 <input type="checkbox" id="nav-toggle" className="nav-toggle" />
                 <label htmlFor="nav-toggle" className='nav-toggle-label'>
-                    <span></span>
+                    <i className="fas fa-bars"></i>
                 </label>
                 <nav>
                     <ul>
                         <li>
-                            <a href="www.google.com">About</a>
+                            <Link to="/">About</Link>
                         </li>
                         <li>
-                            <a href="www.google.com">Tutorials</a>
+                            <Link to="/tutorials">Tutorials</Link>
                         </li>
                         <li>
-                            <a href="www.google.com">Projects</a>
+                            <Link to="/projects">Projects</Link>
                         </li>
                         <li>
-                            <a href="www.google.com">Contact</a>
+                            <Link to="/contact">Contact</Link>
                         </li>
                     </ul>
                 </nav>
