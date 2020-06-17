@@ -2,9 +2,18 @@
     "items": [
         {
             "id": 1,
-            "author": "Aniruddh Kishore Bodhgavi",
-            "date": "16th June, 2020",
-            "fileName": "ROS_intro.pdf"
+            "title": "ROS tutorial: Installation and introduction",
+            "topics": ["simulation", "easy"],
+            "authors": ["Aniruddh Kishore Bodhgavi"],
+            "created_date": "16th June, 2020",
+            "last_update": "16th June, 2020",
+            "description": {
+                "text": ["Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores sapiente tenetur dignissimos iste consequuntur corrupti omnis, cumque, adipisci delectus amet deserunt ut. Iste ea sed illum fugit cum eum facilis!", "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, ad. Molestias voluptates, quae sunt aperiam quia enim dolor molestiae culpa iste optio eveniet vero odio autem assumenda eos quas eius?"],
+                "image_links": ["https://us.123rf.com/450wm/gorrilar78/gorrilar781806/gorrilar78180600009/104275557-stock-vector-industrial-machine-robotic-robot-arm-hand-factory-vector-illustration.jpg?ver=6"],
+                "video_links": ["https://www.youtube.com/watch?v=AlGnUl1QFac", "https://www.youtube.com/watch?v=6tNS--WetLI"]
+            },
+            "file_names": ["ROS_intro.pdf"],
+            "reference_links": [{"href": "https://github.com/aniruddhkb/enigmatutorials", "name": "Enigma tutorials"}]
         }
     ]
 }

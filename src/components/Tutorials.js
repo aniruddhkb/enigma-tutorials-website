@@ -14,7 +14,7 @@ function Tutorials() {
     let tutorialLinks = null;
     if (fileData !== 0){
         tutorialLinks =
-            fileData.map((item) => <li key={item.fileName}><Link to={`tutorials/${item.id - 1}`}>{`${item.fileName} by ${item.author}`}</Link></li>)
+            fileData.map((item) => <li key={item.id}><Link to={`tutorials/${item.id - 1}`}>{`${item.title} by ${item.authors.join(", ")}`}</Link></li>)
     }
 
     return (
@@ -28,9 +28,9 @@ function Tutorials() {
       fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, itaque quasi exercitationem, adipisci soluta
       maxime autem tenetur vitae animi, veritatis molestiae quia reprehenderit dicta ut dolores in quaerat obcaecati
       voluptatibus?
-            <ul>
+            <ol className="to-tutorial-links">
                 {tutorialLinks}
-            </ul>
+            </ol>
         </div>
     )
 }

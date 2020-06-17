@@ -1,39 +1,86 @@
 .tutorial-article{
     width: 95vw;
     margin: auto;
+}
+
+.tutorial-title{
+    font-size: min(2rem, 3vmax);
+}
+
+.tutorial-authors{
+    grid-row: 1/ span 1;
+    grid-column: 1/ span 2;
+}
+
+.turorial-created-date{
+    grid-row: 2/ span 1;
+    grid-column: 1 / span 1;
+    color: lightgray
+}
+
+.turorial-updated-date{
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    color: lightgray
+}
+
+.tutorial-topics{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.tutorial-topic{
+    width: min-content;
+    background-color: lightgray;
+    border-radius: 10px;
+    padding: 1px 3px;
+    margin-right: 1rem;
+}
+
+#description{
+    font-size: 1.8rem;
+}
+
+.tutorial-desc{
+    margin: 1rem 0;
+}
+
+.desc-image{
+    margin: auto;
+    max-width: 80%
+}
+
+.tutorial-vids, .tutorial-images{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-canvas{
-    position: relative;
-    width: 95vw;
-    transform: scale(1.2);
+.desc-video{
+    padding: 1rem 0;
+    margin: auto;
+    width: 560px;
+    height: 315px;
 }
 
-.pager{
-    position: relative;
-    width: max-content;
+.tutorial-links{
     display: flex;
-    align-items: space-evenly;
-    padding: 10px;
+    flex-direction: column;
 }
 
-.download-link{
-    position: relative;
-    width: max-content
-}
-
-.btn{
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid rgba(0,0,0,0.7);
-    background-color: var(--bgd);
+.reference-link, .tutorial-pdf{
+    margin-bottom: 1rem;
+    color: darkblue
 }
 
 @media screen and (min-width: 768px){
     .tutorial-article{
         width: 80vw;
+    }
+
+    .tutorial-info{
+        display: grid;
+        grid-template-rows: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }

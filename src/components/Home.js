@@ -1,5 +1,6 @@
 import React from 'react'
-// import { Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
+
 import Header from './Header'
 import Body from './Body'
 import Footer from './Footer'
@@ -7,8 +8,10 @@ import Footer from './Footer'
 function Home() {
     return (
         <>
-            <Header />
-            <Body />
+            <BrowserRouter>
+                <Header />
+                <Body />
+            </BrowserRouter>
             <Footer />
         </>
     )
